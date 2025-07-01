@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiNews</title>
+    <link rel="icon" href="infi.png" type="image/webp">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>InfiNews🌎</h1>
+        
+        
+        <input type="text" id="search" placeholder="Search for news...">
+         
+               
+    </header>
+
+    <!-- Navigation Categories -->
+    <nav>
+        <ul>
+            <li onclick="fetchNews('general')">Home</li>
+            <li onclick="fetchNews('technology')">Technology</li>
+            <li onclick="fetchNews('business')">Business</li>
+            <li onclick="fetchNews('sports')">Sports</li>
+            <li onclick="fetchNews('entertainment')">Entertainment</li>
+            <li onclick="fetchNews('science')">Science</li>
+            <li onclick="fetchNews('health')">Health</li>
+            <li onclick="toggleTheme()"></li>
+        </ul>
+    </nav>
+
+    <!-- News Container -->
+    <div class="news-container" id="news-container">
+        <h2>Fetching Latest News...</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
